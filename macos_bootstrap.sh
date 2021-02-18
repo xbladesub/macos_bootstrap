@@ -20,9 +20,6 @@
 # - https://news.ycombinator.com/item?id=8402079
 # - http://notes.jerzygangi.com/the-best-pgp-tutorial-for-mac-os-x-ever/
 
-sudo visudo
-Defaults        timestamp_timeout=60
-
 echo "Starting bootstrapping"
 
 # Check for Homebrew, install if we don't have it
