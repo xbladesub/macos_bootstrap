@@ -66,9 +66,6 @@ sudo gem install ${RUBY_GEMS[@]}
 
 : <<'END'
 
-echo "Installing global npm packages..."
-npm install marked -g
-
 echo "Configuring OSX..."
 
 # Set fast key repeat rate
