@@ -20,6 +20,8 @@
 # - https://news.ycombinator.com/item?id=8402079
 # - http://notes.jerzygangi.com/the-best-pgp-tutorial-for-mac-os-x-ever/
 
+sudo id
+
 echo "Starting bootstrapping"
 
 # Check for Homebrew, install if we don't have it
@@ -34,29 +36,33 @@ brew update
 echo "Installing packages..."
 PACKAGES=(
     git
+    zsh
+    neofetch
     tmux
     wget
 )
 brew install ${PACKAGES[@]}
+
+#Installing ohmyzsh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 echo "Cleaning up..."
 brew cleanup
 
 echo "Installing apps..."
 APPS=(
+    google-chrome
+    sourcetree
+    dropbox
+    iterm2
+    proxyman
+    postman
+    spotify
+    telegram
     iconizer
     vapor
-    iterm2
 )
 brew install ${APPS[@]}
-
-echo "Installing fonts..."
-brew tap homebrew/cask-fonts 
-FONTS=(
-    font-inconsolata
-    font-go
-)
-brew install ${FONTS[@]}
 
 echo "Installing Ruby gems"
 RUBY_GEMS=(
@@ -65,6 +71,14 @@ RUBY_GEMS=(
 sudo gem install ${RUBY_GEMS[@]}
 
 : <<'END'
+
+echo "Installing fonts..."
+brew tap homebrew/cask-fonts 
+FONTS=(
+    font-inconsolata
+    font-go
+)
+brew install ${FONTS[@]}
 
 echo "Configuring OSX..."
 
