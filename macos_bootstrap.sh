@@ -20,6 +20,9 @@
 # - https://news.ycombinator.com/item?id=8402079
 # - http://notes.jerzygangi.com/the-best-pgp-tutorial-for-mac-os-x-ever/
 
+sudo visudo
+Defaults        timestamp_timeout=60
+
 echo "Starting bootstrapping"
 
 # Check for Homebrew, install if we don't have it
@@ -58,13 +61,13 @@ FONTS=(
 )
 brew install ${FONTS[@]}
 
-: <<'END'
-
 echo "Installing Ruby gems"
 RUBY_GEMS=(
     cocoapods
 )
 sudo gem install ${RUBY_GEMS[@]}
+
+: <<'END'
 
 echo "Installing global npm packages..."
 npm install marked -g
