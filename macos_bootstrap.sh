@@ -47,6 +47,7 @@ echo "Installing cask..."
 brew install caskroom/cask/brew-cask
 
 CASKS=(
+    iconizer
     vapor
     iterm2
 )
