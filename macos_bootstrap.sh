@@ -51,6 +51,7 @@ APPS=(
 brew install ${APPS[@]}
 
 echo "Installing fonts..."
+brew tap homebrew/cask-fonts 
 FONTS=(
     font-inconsolidata
     font-roboto
