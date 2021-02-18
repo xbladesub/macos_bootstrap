@@ -25,44 +25,38 @@ echo "Starting bootstrapping"
 # Check for Homebrew, install if we don't have it
 if test ! $(which brew); then
     echo "Installing homebrew..."
-    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
 # Update homebrew recipes
 brew update
 
+echo "Installing packages..."
 PACKAGES=(
     git
     tmux
     wget
 )
-
-echo "Installing packages..."
 brew install ${PACKAGES[@]}
 
 echo "Cleaning up..."
 brew cleanup
 
-echo "Installing cask..."
-brew install caskroom/cask/brew-cask
-
-CASKS=(
+echo "Installing apps..."
+APPS=(
     iconizer
     vapor
     iterm2
 )
-
-echo "Installing cask apps..."
-brew cask install ${CASKS[@]}
+brew install ${APPS[@]}
 
 echo "Installing fonts..."
-brew tap cask/fonts
 FONTS=(
     font-inconsolidata
     font-roboto
     font-clear-sans
 )
-brew cask install ${FONTS[@]}
+brew install ${FONTS[@]}
 
 : <<'END'
 
