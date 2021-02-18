@@ -54,8 +54,7 @@ echo "Installing fonts..."
 brew tap homebrew/cask-fonts 
 FONTS=(
     font-inconsolata
-    font-roboto
-    font-clear-sans
+    font-go
 )
 brew install ${FONTS[@]}
 
