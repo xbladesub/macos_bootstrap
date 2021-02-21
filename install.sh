@@ -40,6 +40,7 @@ PACKAGES=(
     neofetch
     tmux
     wget
+    shpotify
 )
 brew install ${PACKAGES[@]}
 
