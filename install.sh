@@ -62,6 +62,7 @@ APPS=(
     postman
     spotify
     telegram
+    vlc
     iconizer
     vapor
 )
