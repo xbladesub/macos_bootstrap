@@ -40,6 +40,7 @@ PACKAGES=(
     neofetch
     tmux
     wget
+    osx-cpu-temp
     shpotify
 )
 brew install ${PACKAGES[@]}
