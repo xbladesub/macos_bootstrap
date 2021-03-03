@@ -33,6 +33,8 @@ fi
 # Update homebrew recipes
 brew update
 
+brew install cask
+
 echo "Installing packages..."
 PACKAGES=(
     git
