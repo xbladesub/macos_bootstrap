@@ -38,10 +38,7 @@ PACKAGES=(
     git
     zsh
     neofetch
-    tmux
-    wget
     osx-cpu-temp
-    shpotify
 )
 brew install ${PACKAGES[@]}
 
@@ -58,7 +55,8 @@ echo "Installing apps..."
 APPS=(
     google-chrome
     sourcetree
-    dropbox
+    yandex-disk
+    transmission
     iterm2
     proxyman
     postman
