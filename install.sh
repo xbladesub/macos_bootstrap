@@ -63,6 +63,8 @@ APPS=(
     proxyman
     postman
     spotify
+    discord
+    slack
     telegram
     vlc
     iconizer
