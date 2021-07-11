@@ -55,11 +55,12 @@ brew cleanup
 
 echo "Installing apps..."
 APPS=(
-    google-chrome
-    sourcetree
-    yandex-disk
-    transmission
     iterm2
+    alfred
+    google-drive
+    sourcetree
+    transmission
+    docker
     proxyman
     postman
     spotify
@@ -68,6 +69,9 @@ APPS=(
     telegram
     vlc
     iconizer
+    rectangle
+    pdf-expert
+    zoom
     vapor
 )
 brew install ${APPS[@]}
