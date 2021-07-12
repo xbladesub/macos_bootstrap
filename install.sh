@@ -82,4 +82,4 @@ RUBY_GEMS=(
 )
 sudo gem install ${RUBY_GEMS[@]}
 
-echo "Bootstrapping complete"
+echo "Bootstrapping complete."
