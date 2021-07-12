@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 # 
 # Bootstrap script for setting up a new OSX machine
 # 
